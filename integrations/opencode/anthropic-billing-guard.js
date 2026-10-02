@@ -15,7 +15,7 @@ import { join } from "node:path";
 const CLAIM = "anthropic-ratelimit-unified-representative-claim";
 const OVERAGE_IN_USE = "anthropic-ratelimit-unified-overage-in-use";
 const REPEAT_MS = 10 * 60 * 1000;
-const WRAPPED = Symbol.for("dotfiles.anthropic-billing-guard");
+const WRAPPED = Symbol.for("anthropic-billing-guard");
 // Shared with the pi extension: one line per request billed to extra usage.
 const LOG = join(process.env.XDG_STATE_HOME || join(homedir(), ".local", "state"), "anthropic-extra-usage.log");
 
